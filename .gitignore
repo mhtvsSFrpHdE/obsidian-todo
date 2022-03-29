@@ -1,0 +1,13 @@
+# Python environment
+.venv
+__pycache__
+
+# IDE
+env.bat
+start_vscode.bat
+
+# Config
+ObsidianFilePath.py
+
+# User data
+lastRun
