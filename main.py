@@ -1,11 +1,21 @@
-import urllib.parse
-import datetime
-import webbrowser
-from pathlib import Path
-import os
+from pathlib import Path  # nopep8
+import os  # nopep8
+import sys  # nopep8
 
-import ObsidianFilePath
-import ObsidianUriTemplate
+# Append source code folder
+srcPath = Path(os.path.dirname(__file__)).joinpath("src")  # nopep8
+sys.path.append(srcPath.joinpath("config"))  # nopep8
+sys.path.append(srcPath.joinpath("obsidian"))  # nopep8
+
+del srcPath  # nopep8
+
+import datetime
+import time
+import urllib.parse
+import webbrowser
+
+import Config.ObsidianFilePath as ObsidianFilePath
+import Src.Obsidian.ObsidianUriTemplate as ObsidianUriTemplate
 
 lastRunFilePath = Path(ObsidianFilePath.lastRun)
 lastRunIsToday = False
