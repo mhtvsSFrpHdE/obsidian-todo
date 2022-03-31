@@ -47,5 +47,8 @@ obsidian_uri = (ObsidianUriTemplate.obsidian
                 + urllib.parse.quote(ObsidianFilePath.vault)
                 + ObsidianUriTemplate.file
                 + urllib.parse.quote(weekValue))
-
 webbrowser.open(obsidian_uri)
+
+# Why sleep
+# https://forum.obsidian.md/t/obisidian-uri-will-not-open-obsidian-if-parent-process-exit-too-fast/34978
+time.sleep(60)
