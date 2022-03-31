@@ -15,10 +15,10 @@ import webbrowser
 
 import Src.Debug.DebugFlag as DebugFlag
 import Src.LastRun.LastRun as LastRun
+import Src.Obsidian.NewDay as NewDay
 import Src.Obsidian.ObsidianUri as ObsidianUri
 
-print(LastRun.LastRunIsToday)
-print(ObsidianUri.ObsidianUri)
+NewDay.ResetEverydayDocument(LastRun.LastRunIsToday)
 
 if (DebugFlag.SkipOpenObsidian == False):
     webbrowser.open(ObsidianUri.ObsidianUri)
