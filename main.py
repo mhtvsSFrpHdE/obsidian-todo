@@ -13,10 +13,15 @@ del srcPath  # nopep8
 import time
 import webbrowser
 
+import Src.Debug.DebugFlag as DebugFlag
 import Src.LastRun.LastRun as LastRun
 import Src.Obsidian.ObsidianUri as ObsidianUri
 
+print(LastRun.LastRunIsToday)
+print(ObsidianUri.ObsidianUri)
 
+if (DebugFlag.SkipOpenObsidian == False):
+    webbrowser.open(ObsidianUri.ObsidianUri)
 
 # Why sleep
 # https://forum.obsidian.md/t/obisidian-uri-will-not-open-obsidian-if-parent-process-exit-too-fast/34978
