@@ -8,8 +8,9 @@ Pure text todo list solution.
 
 1. Duplicate `Config\ObsidianFilePathExample.py` as `Config\ObsidianFilePath.py`  
 and change variable depending on your environment.
-1. Run `python main.py` under `main.py` folder,  
-Obsidian will open and show today's note.
+1. Run `pythonw main.py` under `main.py` folder,  
+Obsidian will open and show today's note.  
+If use python`w`, console will not show.
 
 ## Important
 
