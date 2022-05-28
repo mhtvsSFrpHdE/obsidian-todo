@@ -13,14 +13,15 @@ del srcPath  # nopep8
 import time
 import webbrowser
 
-import Src.Debug.DebugFlag as DebugFlag
+# import Src.Debug.DebugFlag as DebugFlag
 import Src.LastRun.LastRun as LastRun
 import Src.Obsidian.NewDay as NewDay
 import Src.Obsidian.ObsidianUri as ObsidianUri
+import Config.Setting as Setting
 
 NewDay.ResetEverydayDocument(LastRun.LastRunIsToday)
 
-if (DebugFlag.SkipOpenObsidian == False):
+if Setting.openObsidian:
     webbrowser.open(ObsidianUri.ObsidianUri)
 
 # Why sleep

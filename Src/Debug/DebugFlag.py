@@ -1,1 +1,0 @@
-SkipOpenObsidian = False
