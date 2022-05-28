@@ -7,7 +7,5 @@ env.bat
 start_vscode.bat
 
 # Config
-ObsidianFilePath.py
-
-# User data
-/lastRun
+/Config/ObsidianFilePath.py
+/Config/Setting.py
