@@ -16,7 +16,7 @@ everyday = r"C:\everyday.md"
 everydayTemplate = r"C:\everyday.md.template"
 
 # Last run file path
-lastRun = "lastRun"
+lastRun = r"C:\lastRun"
 
 # Do not modify
 
